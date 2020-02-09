@@ -1,0 +1,17 @@
+Default Method in Interface:--
+        
+             Default method was introduced in Java 8.Default interface 
+            methods are an efficient way to deal with this issue. They 
+            allow us to add new methods to an interface that are 
+             automatically available in the implementations. Thus,
+             there's no need to modify the implementing classes.
+
+        Example:
+              public interface MyInterface {
+     
+            // regular interface methods
+     
+            default void defaultMethod() {
+            // default method implementation
+           }
+        }

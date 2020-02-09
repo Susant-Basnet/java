@@ -1,0 +1,33 @@
+    Exception class:
+             
+              Exception  is a problem that occurs during the execution of a program.
+              When an Exception occurs the normal flow of the program is disrupted 
+              and the program ends abnormally, which is expected, therefore, these
+             exceptions should be handled.
+
+
+           class MyException extends Exception
+{
+	public MyException(string s)
+	{
+		//Call constructor of parent exception
+		super(s);
+	}
+}
+ public class VirtualMachineError{
+ 	//Driver program
+ 	public static void main(String[] args)
+ 	{
+ 		try
+ 		{
+ 			//throw an object of user defined exception
+ 			throw new MyException("Aashish Bhandari");
+ 		}
+ 		catch (MyException e)
+ 		{
+ 			System.out.println("Caught");
+
+ 			System.out.println(e.getMessage());
+ 		}
+ 	}
+ }
